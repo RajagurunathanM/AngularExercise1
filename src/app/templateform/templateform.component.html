@@ -2,7 +2,7 @@
 
 <div class="jumbotron">
 
-  <div id="MyForm" >
+  <div class="TemplateForm" id="MyForm" >
   <h1>Student Registration Form</h1>
 
 
@@ -14,9 +14,9 @@
 
       <div class="form-control">
         <input validation required [(ngModel)]="firstname" name="ngfirstname" #ngfname="ngModel" type="text" id="firstname" />
-        </div>
+      </div>
 
-        <div class="alert alert-danger" *ngIf="ngfname.touched && ngfname.invalid">Please enter your First name</div>
+      <div class="alert alert-danger" *ngIf="ngfname.touched && ngfname.invalid">Please enter your First name</div>
     
 
     </div>
@@ -42,7 +42,7 @@
         
       </div>
 
-      <div class="alert alert-danger" *ngIf="ngemailaddress.touched && ngemailaddress.errors?.required">Please enter your Email Address</div>
+      <div class="alert alert-danger" *ngIf="ngemailaddress.touched && ngemailaddress.errors?.required">Please enter valid Email Address</div>
         <div class="alert alert-danger" *ngIf="ngemailaddress.touched && ngemailaddress.errors?.email">Please enter your Email address properly</div>
 
 
@@ -56,7 +56,7 @@
 
       </div>
 
-       <div class="alert alert-danger" *ngIf="ngphonenumber.touched && ngphonenumber.errors?.required">Please enter your Phone number</div>
+       <div class="alert alert-danger" *ngIf="ngphonenumber.touched && ngphonenumber.errors?.required">Please enter valid Phone number</div>
         <div class="alert alert-danger" 
         *ngIf="ngphonenumber.touched && ngphonenumber.errors?.minlength">Phone number standard length is 10</div>
                
