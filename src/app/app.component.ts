@@ -13,3 +13,4 @@ ngOnInit(): void {
 }
   name = 'Angular ' + VERSION.major; 
 }
+ 
