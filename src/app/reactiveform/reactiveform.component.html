@@ -9,26 +9,26 @@
 
       <div class="form-group">
         <label for="empid">Employee ID</label>
-        <input class="form-control" type="text" id="empid" formControlName="employeeid" />
+        <input placeholder="Enter your Employee ID Eg.101" class="form-control" type="text" id="empid" formControlName="employeeid" />
         <div class="alert alert-danger" *ngIf="f.employeeid.touched && f.employeeid.invalid">Enter valid Employee ID</div>
 
       </div>
 
       <div class="form-group">
         <label for="name">Name</label>
-        <input class="form-control" type="text" id="name" formControlName="name" />
+        <input placeholder="Enter your Name Eg.Raj" class="form-control" type="text" id="name" formControlName="name" />
         <div class="alert alert-danger" *ngIf="f.name.touched && f.name.invalid">Enter valid Employee name</div>
       </div>
 
       <div class="form-group">
         <label for="address">Address</label>
-        <input class="form-control" type="text" id="address" formControlName="address" />
+        <input placeholder="Enter your Address Eg.GV,CBE" class="form-control" type="text" id="address" formControlName="address" />
         <div class="alert alert-danger" *ngIf="f.address.touched && f.address.invalid">Enter valid Address</div>
       </div>
 
       <div class="form-group">
         <label  for="phno">Phone Number</label>
-        <input class="form-control" type="text" id="phno" formControlName="phonenumber" />
+        <input placeholder="Enter your Mobile number Eg.9876543210" class="form-control" type="text" id="phno" formControlName="phonenumber" />
         <div class="alert alert-danger" *ngIf="EmployeeSignupForm.controls['phonenumber'].hasError('minlength') || EmployeeSignupForm.controls['phonenumber'].hasError('maxlength')">Phone number must be 10 characters long</div>
 
       </div>
