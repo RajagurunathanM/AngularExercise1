@@ -72,7 +72,7 @@
   <div>
 </div>
 
-<div class="samplediv">
+<div class="samplediv" *ngIf="EmployeeSignupForm.valid">
   <h2>Preview Tab</h2>
   <h4>{{EmployeeSignupForm.value.employeeid}}</h4>
   <h4>{{EmployeeSignupForm.value.name}}</h4>
