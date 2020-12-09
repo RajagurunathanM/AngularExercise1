@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -13,9 +13,11 @@ import { ReactiveFormComponent } from './reactiveform/reactiveform.component';
 import { ScrollDirective } from './scrolldirective/scrolldetect.directive';
 import { OddorEvenPipe } from './oddorevenpipe/oddoreven.pipe';
 
+// import { Employee } from './datamodel';
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, TemplateFormComponent, OddEvenPipeComponent, ScrollComponent,ScrollDirective, OddorEvenPipe, ReactiveFormComponent ],
+  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule ],
+  declarations: [ AppComponent, HelloComponent, TemplateFormComponent, OddEvenPipeComponent, ScrollComponent,ScrollDirective, OddorEvenPipe, ReactiveFormComponent],
   bootstrap:    [ AppComponent ]
 })
 
