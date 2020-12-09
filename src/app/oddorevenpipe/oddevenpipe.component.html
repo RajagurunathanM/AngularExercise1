@@ -1,12 +1,12 @@
 <link href="//netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
-<div class ="custompipes">
+<div class ="col-12 custompipes">
   
   <h1>Custom Pipes(Even)</h1>
    
   <label for="sampletext" ><h3>Enter a String</h3></label><br>
   <textarea placeholder="Enter your text here..." style="width:450px;height:70px" [(ngModel)]='sampletext' type="textarea" id="sampletext"></textarea>
   <br>
-  
+
 <div class="PreviewTab" *ngIf="sampletext?.length >0 then pipemsg"></div>
 
   <ng-template  #pipemsg> 
