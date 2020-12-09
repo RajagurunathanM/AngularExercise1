@@ -6,14 +6,17 @@
   <label for="sampletext" ><h3>Enter a String</h3></label><br>
   <textarea placeholder="Enter your text here..." style="width:450px;height:70px" [(ngModel)]='sampletext' type="textarea" id="sampletext"></textarea>
   <br>
-
-  <div  *ngIf="sampletext?.length >0 then pipemsg"></div>
+  
+<div class="PreviewTab" *ngIf="sampletext?.length >0 then pipemsg"></div>
 
   <ng-template  #pipemsg> 
+    <div class="PreviewTab">
     <h3>String Value: {{sampletext}}</h3>
     <h3>String Length: {{sampletext.length}} </h3>
     <h3>String Length Type: {{ sampletext | oddorEven }}</h3> 
+    </div>
   </ng-template>
 
   <br>
 </div>
+
