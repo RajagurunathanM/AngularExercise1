@@ -1,7 +1,20 @@
 import {NgModule} from '@angular/core';
 import {Routes,RouterModule} from '@angular/router';
 
-const appRoutes:Routes=[]
+import { AppComponent } from './app.component';
+
+import { TemplateFormComponent } from './templateform/templateform.component';
+import { OddEvenPipeComponent } from './oddorevenpipe/oddevenpipe.component';
+import { ScrollComponent } from './scrolldirective/scrolldirective.component';
+import { ReactiveFormComponent } from './reactiveform/reactiveform.component';
+
+const appRoutes:Routes=[
+  {path:'',component:AppComponent},
+  {path:'oddevenpipe',component:OddEvenPipeComponent},
+  {path:'reactiveform',component:ReactiveFormComponent},
+  {path:'scrolldirective',component:ScrollComponent},
+  {path:'templateform',component:TemplateFormComponent}
+]
 
 @NgModule({
 imports:[
