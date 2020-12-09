@@ -1,0 +1,71 @@
+<div class="jumbotron">
+
+  <div id="MyForm" >
+  <h1>Student Registration Form</h1>
+
+
+  <form name="TemplateForm" #Tform="ngForm">
+
+    <div class="form-group">
+
+      <div class="form-control">
+        <label for="firstname" >First Name</label>
+      </div>
+      <div class="form-control">
+        <input validation required [(ngModel)]="firstname" name="ngfirstname" #ngfname="ngModel" type="text" id="firstname" />
+        <div *ngIf="ngfname.touched && ngfname.invalid">Please enter your First name</div>
+
+      </div>
+    
+
+      <div class="form-control">
+        <label for="lastname" >Last Name</label>
+      </div>
+      <div class="form-control">
+        <input validation required [(ngModel)]="lastname" #nglname="ngModel" name="nglastname" type="text" id="lastname" />
+        <div *ngIf="nglname.touched && nglname.invalid">Please enter your Last name</div>
+
+      </div>
+   
+
+      <div class="form-control">
+        <label for="emailaddress" >Email Address</label>
+      </div>
+      <div class="form-control">
+        <input validation required email [(ngModel)]="emailaddress" name="email" #ngemailaddress="ngModel" type="email" id="emailaddress" />
+         <div *ngIf="ngemailaddress.touched && ngemailaddress.errors?.required">Please enter your Email Address</div>
+        <div *ngIf="ngemailaddress.touched && ngemailaddress.errors?.email">Please enter your Email address properly</div>
+        
+      </div>
+
+      <div class="form-control">
+        <label for="phonenumber" >Phone Number</label>
+      </div>
+      <div class="form-control">
+        <input class="alert alert-danger" validation required [maxLength]="10" minlength="10" [(ngModel)]="phonenumber" #ngphonenumber="ngModel" name="phonenumber" type="text" id="phonenumber" />
+
+         <div *ngIf="ngphonenumber.touched && ngphonenumber.errors?.required">Please enter your Phone number</div>
+        <div class="alert alert-danger" 
+        *ngIf="ngphonenumber.touched && ngphonenumber.errors?.minlength">Phone number standard length is 10</div>
+        
+      </div>
+       <br>
+
+      <button [disabled]="ngfname.invalid || nglname.invalid || ngphonenumber.invalid || ngemailaddress.invalid" (click)="onSubmit()">Submit</button>
+      
+    </div> 
+
+  </form>
+  
+  <div *ngIf="Tform.valid" class="PreviewTab">
+
+    <h1>Preview Tab</h1>
+
+    <h3>{{firstname}}</h3>
+    <h3>{{lastname}}</h3>
+    <h3>{{emailaddress}}</h3>
+    <h3>{{phonenumber}}</h3>
+  </div>
+
+
+</div>
