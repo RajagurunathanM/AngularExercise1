@@ -14,9 +14,10 @@ import { ScrollDirective } from './scrolldirective/scrolldetect.directive';
 import { OddorEvenPipe } from './oddorevenpipe/oddoreven.pipe';
 
 // import { Employee } from './datamodel';
+import { Employee } from './reactiveform/datamodel';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule ],
+  imports:      [ BrowserModule, FormsModule, ReactiveFormsModule],
   declarations: [ AppComponent, HelloComponent, TemplateFormComponent, OddEvenPipeComponent, ScrollComponent,ScrollDirective, OddorEvenPipe, ReactiveFormComponent],
   bootstrap:    [ AppComponent ]
 })
