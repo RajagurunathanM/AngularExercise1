@@ -26,7 +26,7 @@ export class ReactiveFormComponent implements OnInit {
       'address':new FormControl(null,Validators.required),
       'phonenumber':new FormControl(null,[Validators.required,Validators.minLength(10),Validators.maxLength(10)]),
     });
-    
+     
     // this.EmployeeSignupForm.setValue({
     //   'employeeid':this.employee.employeeid,
     //   'name':this.employee.name,
