@@ -1,13 +1,14 @@
 import { Component, OnInit, VERSION } from '@angular/core';
 import { FormControlName, FormGroup } from '@angular/forms';
 import {FormControl,Validators,FormArray} from '@angular/forms';
-import { Employee } from './reactiveform/datamodel';
+// import { Employee } from './reactiveform/datamodel';
 
 @Component({
   selector: 'reactive-form',
   templateUrl: './reactiveform.component.html',
   styleUrls: [ './reactiveform.component.css' ]
 })
+
 export class ReactiveFormComponent implements OnInit {
   
   EmployeeSignupForm:FormGroup;
@@ -83,6 +84,23 @@ export class ReactiveFormComponent implements OnInit {
   get f()
   {
     return this.EmployeeSignupForm.controls;
+  }
+
+}
+
+export class Employee
+{
+  employeeid:string;
+  name:string;
+  address:string;
+  phonenumber:string;
+   
+  constructor(id:string,name:string,address:string,phonenumber:string)
+  {
+    this.employeeid=id,
+    this.name=name,
+    this.address=address,
+    this.phonenumber=phonenumber
   }
 
 }
