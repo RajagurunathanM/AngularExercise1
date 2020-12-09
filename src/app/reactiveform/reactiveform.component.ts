@@ -46,6 +46,7 @@ export class ReactiveFormComponent implements OnInit {
 
      console.log('Employee Form submitted');
      console.log(this.employeeList[this.employeeList.length-1]); 
+     alert('Employee Form submitted successfully');
 
   }
 
@@ -61,6 +62,7 @@ export class ReactiveFormComponent implements OnInit {
 
     //this.EmployeeSignupForm.reset(); // Default reset
     console.log("form reseted to default values");
+    alert('form reseted to default values');
    
   }
 
@@ -78,7 +80,8 @@ export class ReactiveFormComponent implements OnInit {
 
     //console.log(this.employeeList);
 
-    console.log("Patch values applied to the form");
+    console.log("Patch values applied to the Employee form");
+    alert('Patch values applied to the Employee form')
 
   }
 
