@@ -1,15 +1,18 @@
 <div class="home">
   <ul class="nav nav-tabs">
 
-    <li> <a href="#"> Template Form(Student) </a> </li>
-    <li> <a href="#"> Template Form(Student) </a> </li>
-    <li> <a href="#"> Template Form(Student) </a> </li>
-    <li> <a href="#"> Template Form(Student) </a> </li>
+    <li routerLinkActive="active" > <a routerLink="/templateform" > Template Form(Student) </a> </li>
+    <li routerLinkActive="active" > <a routerLink="/reactiveform" > Reactive Form(Employee) </a> </li>
+    <li routerLinkActive="active"> <a routerLink="/oddevenpipe" > Custom Pipes(OddorEven) </a> </li>
+    <li routerLinkActive="active"> <a routerLink="/scrolldirective"> Custom Directive(ScrollEvent) </a> </li>
 
   </ul>
 </div>
 
-<reactive-form></reactive-form>
+<div>
+    <router-outlet></router-outlet>
+</div>
+<!-- <reactive-form></reactive-form>
 <hr><hr>
 
 <template-form></template-form>
@@ -19,4 +22,4 @@
 <hr><hr>
 
 <scroll-detect></scroll-detect>
-<hr><hr>
+<hr><hr> -->
