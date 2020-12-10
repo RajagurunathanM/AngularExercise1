@@ -8,7 +8,7 @@ import { Component, OnInit,  VERSION } from '@angular/core';
 export class AppComponent implements OnInit {
 ngOnInit(): void {
 
-  alert('Click the components tab to see the Magic');
+  // alert('Click the components tab to see the Magic');
 
 }
   name = 'Angular ' + VERSION.major; 
