@@ -9,7 +9,7 @@ import { ScrollComponent } from './scrolldirective/scrolldirective.component';
 import { ReactiveFormComponent } from './reactiveform/reactiveform.component';
 
 const appRoutes:Routes=[
-  {path:'',component:AppComponent},
+  {path: '', component: AppComponent, pathMatch: 'full' },
   {path:'oddevenpipe',component:OddEvenPipeComponent},
   {path:'reactiveform',component:ReactiveFormComponent},
   {path:'scrolldirective',component:ScrollComponent},
