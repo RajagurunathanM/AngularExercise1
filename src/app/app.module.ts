@@ -15,11 +15,10 @@ import { ScrollDirective } from './scrolldirective/scrolldetect.directive';
 import { OddorEvenPipe } from './oddorevenpipe/oddoreven.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
-import { DemoDirective } from './scrolldirective/demo.directive';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
-  declarations: [ AppComponent, HelloComponent, TemplateFormComponent, OddEvenPipeComponent, ScrollComponent,ScrollDirective, OddorEvenPipe, ReactiveFormComponent, DashboardComponent, DemoDirective],
+  declarations: [ AppComponent, HelloComponent, TemplateFormComponent, OddEvenPipeComponent, ScrollComponent,ScrollDirective, OddorEvenPipe, ReactiveFormComponent, DashboardComponent],
   bootstrap:    [ AppComponent ]
 })
 
